@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    /* Remove background-color here to avoid black blocks */
+}
+
+/* The Background Image Container */
+.parallax {
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    /* This centers the content box within the image */
+    display: flex;
+    align-items: center; 
+    padding: 0 10%;
+}
+
+/* IMAGE PATHS - IMPORTANT: 
+   Check if your folder is named 'images' and files are '.jpeg' */
+.img1 { background-image: url('images/bg1.jpg'); }
+.img2 { background-image: url('images/bg2.jpg'); }
+.img3 { background-image: url('images/bg3.jpg'); }
+.img4 { background-image: url('images/bg4.jpg'); }
+
+/* The Text Container */
+.content {
+    background: transparent; /* No background color at all */
+    color: white;
+}
+
+/* Alignment Classes */
+.align-left { width: 100%; text-align: left; }
+.align-right { width: 100%; text-align: right; }
+
+/* Text Styling: White & Block Letters */
+h1 {
+    font-size: 5rem;
+    font-family: 'Arial Black', sans-serif;
+    text-transform: uppercase; /* BLOCK LETTERS */
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 15px rgba(0,0,0,0.8);
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    color: white; /* Ferrari Red Accents */
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1.2rem;
+    font-family: 'Arial', sans-serif;
+    max-width: 500px;
+    line-height: 1.6;
+    /* If aligned right, move the paragraph block to the right */
+}
+
+.align-right p {
+    margin-left: auto;
+}
